@@ -1,0 +1,79 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Old+Standard+TT&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "acme", "sans-serif";
+    font-size: 1.4em;
+    background-color: beige;
+}
+
+#container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #FFFDF5;
+    color: #BF826B;
+    border: 5px solid darkcyan;
+    padding: 5px;
+}
+
+section {
+    margin-left: 10px;
+}
+
+h1 {
+    font-family: "Old Standard TT", "sans-serif";
+    font-size: 1.4em;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+header, footer {
+    color: #FFF0E3;
+    background-color: cadetblue;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+ul, ol {
+    list-style-position: inside;
+    margin-bottom: 5px;
+}
+
+ol ul li {
+    margin-left: 25px;
+}
+
+td:nth-child(2) {
+    padding-left: 15px;
+    padding-bottom: 2px;
+}
+
+input[type=submit] {
+    background-color: #700111;
+    color: #FFF0E3;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #DAA482;
+    color: #FFF0E3;
+    box-shadow: 5px 5px 5px #eee;
+}

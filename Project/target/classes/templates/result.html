@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Professional skills project</title>
+    <link rel="stylesheet" type="text/css" href="img/style.css"/>
+</head>
+<body>
+<div id="container">
+    <header>
+        <h1>Professional Skills Project Currency convertor</h1>
+    </header>
+    <section>
+        <form action="/result">
+            <table>
+                <tr>
+                    <td>Base currency:</td>
+                    <td>
+                        <select name="from">
+                            <option th:each="currencyName : ${currencyNameArrayList}" th:text="${currencyName}" th:value="${currencyName}" th:selected="${from} == ${currencyName}"></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Exchange to:</td>
+                    <td>
+                        <select name="to">
+                            <option th:each="currencyName : ${currencyNameArrayList}" th:text="${currencyName}" th:value="${currencyName}"  th:selected="${to} == ${currencyName}"></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="amount">Amount</label></td>
+                    <td><input type="text" name="amount" id="amount"></td>
+                </tr>
+                <tr>
+                    <td>Result</td>
+                    <td><p th:text="${result}"></p></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submit" value="Calculate"></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+    <footer>
+        <p>
+            Made by Matthias Heylen (r0468021) - 1ITF02
+        </p>
+    </footer>
+</div>
+</body>
+</html>
